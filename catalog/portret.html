@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-control" content="no-transform" />
+    <meta http-equiv="Cache-control" content="no-cache" />
+    <meta name="google" content="nopagereadaloud" />
+    <title>Портретні студії</title>
+    <link rel="stylesheet" href="/scss/main.css" />
+  </head>
+  <body>
+    <load src="/partials/header.html" />
+    <header>
+      <h1>Портретні VIP-студії в оренду від Prime Focus Studio</h1>
+    </header>
+
+    <nav aria-label="Breadcrumb">
+      <ul class="breadcrumb"></ul>
+    </nav>
+
+    <main>
+      <ul>
+        <li>
+          <div>
+            <h3>ФотоГармонія</h3>
+            <p>
+              Студія "ФотоГармонія" спеціалізується на створенні витончених і
+              стильних портретів. Наші професійні фотографи допоможуть вам
+              відобразити вашу унікальність і внутрішню гармонію через мистецтво
+              портретної фотографії. Від класичних портретів до креативних
+              концепцій — у нас знайдеться щось для кожного.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Відображення</h3>
+            <p>
+              У студії "Відображення" ми віримо, що кожна людина має свою
+              історію, яку можна розповісти через фотографії. Наші професійні
+              фотографи створюють портрети, які не просто зображають вас, але і
+              відображають вашу особистість та характер. Відчуйте магію
+              професійної портретної фотозйомки в комфортній атмосфері нашої
+              студії.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Престиж Портрет</h3>
+            <p>
+              "Престиж Портрет" — це місце, де елегантність і стиль поєднуються
+              з професійною майстерністю. Ми пропонуємо індивідуальні сесії для
+              створення портретів, які будуть вражати і захоплювати. Наша
+              команда працює над тим, щоб кожен знімок був не просто
+              фотографією, а справжнім витвором мистецтва.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Арт Портрет</h3>
+            <p>
+              "Арт Портрет" пропонує неперевершений досвід у створенні
+              портретів, які поєднують сучасні технології з творчим підходом.
+              Наші художники-фотографи спеціалізуються на створенні портретів,
+              що підкреслюють вашу індивідуальність та емоційний стан. Розкрийте
+              своє справжнє я за допомогою нашої професійної зйомки.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Емоційний Портрет</h3>
+            <p>
+              В "Емоційному Портреті" ми віримо в силу емоцій через фотографію.
+              Наша студія пропонує захоплюючі портретні сесії, які відображають
+              ваші найглибші почуття і настрої. Незалежно від того, чи це
+              радість, смуток, чи спокій — наші фотографи допоможуть вам
+              передати ваші емоції через кожен знімок.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div id="booking-form" class="modal">
+        <div class="modal-content">
+          <span class="close" data-modal-id="booking-form">&times;</span>
+          <h2>Форма бронювання</h2>
+          <form id="booking-form-content">
+            <input type="hidden" id="selected-studio" name="studio" />
+
+            <label for="date">Дата:</label>
+            <input type="date" id="date" name="date" required />
+
+            <label for="time">Час:</label>
+            <input type="time" id="time" name="time" required />
+
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label>
+              <input
+                type="checkbox"
+                id="privacy-policy"
+                name="privacy-policy"
+                required
+              />
+              Я погоджуюсь з
+              <a href="/privacy.html" target="_blank"
+                >політикою конфіденційності</a
+              >
+            </label>
+
+            <button type="submit">Підтвердити бронювання</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <load src="/partials/footer.html" />
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+// Основні стилі для модального вікна
+.modal {
+    display: none; // Сховати модальне вікно за замовчуванням
+    position: fixed; // Залишаємо модальне вікно на місці при прокручуванні
+    z-index: 1000; // Встановлюємо порядок розташування
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; // Додаємо скролл, якщо потрібно
+    background-color: rgba(0, 0, 0, 0.4); // Напівпрозорий фон
+  
+    // Стилі для контенту модального вікна
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto; // Вирівнюємо модальне вікно по центру
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%; // Ширина модального вікна
+      max-width: 600px; // Максимальна ширина модального вікна
+  
+      // Стилі для кнопки закриття
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: color 0.3s ease;
+  
+        &:hover,
+        &:focus {
+          color: black;
+          text-decoration: none;
+        }
+      }
+  
+      // Стилі для форми бронювання
+      form {
+        display: flex;
+        flex-direction: column;
+  
+        label {
+          margin-top: 10px;
+          font-weight: bold;
+        }
+  
+        input {
+          margin-top: 5px;
+          padding: 10px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          font-size: 16px;
+        }
+  
+        button {
+          margin-top: 15px;
+          padding: 10px;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          font-size: 16px;
+          transition: background-color 0.3s ease;
+  
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+  
+        // Стилі для чекбокса та тексту
+        label[for='privacy-policy'] {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+        }
+  
+        input[type='checkbox'] {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  

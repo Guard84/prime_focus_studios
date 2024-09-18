@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-control" content="no-transform" />
+    <meta http-equiv="Cache-control" content="no-cache" />
+    <meta name="google" content="nopagereadaloud" />
+    <title>Комерційні студії</title>
+    <link rel="stylesheet" href="/scss/main.css" />
+  </head>
+  <body>
+    <load src="/partials/header.html" />
+    <header>
+      <h1>Комерційні VIP-студії в оренду від Prime Focus Studio</h1>
+    </header>
+
+    <nav aria-label="Breadcrumb">
+      <ul class="breadcrumb"></ul>
+    </nav>
+
+    <main>
+      <ul>
+        <li>
+          <div>
+            <h3>БізнесФото Студія</h3>
+            <p>
+              "БізнесФото Студія" спеціалізується на створенні професійних
+              портретів для бізнесу. Наші послуги включають корпоративні
+              портрети, рекламні зйомки та фотосесії для комерційних проєктів.
+              Ми допоможемо вам підкреслити імідж вашої компанії і забезпечити
+              високий рівень якості для вашого бізнесу.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Комерційний Об'єктив</h3>
+            <p>
+              "Комерційний Об'єктив" — це студія, яка надає широкий спектр
+              фотопослуг для бізнесу. Від рекламних кампаній до продуктових
+              зйомок, ми використовуємо сучасні технології та креативний підхід
+              для створення зображень, які допоможуть вам виділитися на ринку і
+              привабити більше клієнтів.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Бізнес Візуал</h3>
+            <p>
+              Студія "Бізнес Візуал" спеціалізується на створенні високоякісних
+              комерційних зображень для різних галузей. Наші професійні
+              фотографи створять для вас вражаючі знімки продуктів, реклами та
+              корпоративних заходів. Ми допоможемо вам представити ваш бізнес у
+              найкращому світлі.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Престиж Фото Студія</h3>
+            <p>
+              "Престиж Фото Студія" пропонує преміум-фотографічні послуги для
+              комерційного використання. Наша команда спеціалізується на
+              створенні елегантних і ефектних зображень, які підкреслять статус
+              вашого бренду. Від корпоративних портретів до креативних рекламних
+              фотосесій — ми гарантуємо високу якість і професіоналізм.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Імідж Студія</h3>
+            <p>
+              "Імідж Студія" забезпечує повний спектр послуг для комерційної
+              фотозйомки. Ми працюємо з бізнесами будь-якого розміру, надаючи
+              фотозйомки продуктів, рекламні кампанії та корпоративні портрети.
+              Наша мета — створити зображення, які допоможуть вам сформувати
+              сильний і впізнаваний імідж на ринку.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div id="booking-form" class="modal">
+        <div class="modal-content">
+          <span class="close" data-modal-id="booking-form">&times;</span>
+          <h2>Форма бронювання</h2>
+          <form id="booking-form-content">
+            <input type="hidden" id="selected-studio" name="studio" />
+
+            <label for="date">Дата:</label>
+            <input type="date" id="date" name="date" required />
+
+            <label for="time">Час:</label>
+            <input type="time" id="time" name="time" required />
+
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label>
+              <input
+                type="checkbox"
+                id="privacy-policy"
+                name="privacy-policy"
+                required
+              />
+              Я погоджуюсь з
+              <a href="/privacy.html" target="_blank"
+                >політикою конфіденційності</a
+              >
+            </label>
+
+            <button type="submit">Підтвердити бронювання</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <load src="/partials/footer.html" />
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

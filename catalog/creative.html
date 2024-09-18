@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-control" content="no-transform" />
+    <meta http-equiv="Cache-control" content="no-cache" />
+    <meta name="google" content="nopagereadaloud" />
+    <title>Креативні студії</title>
+    <link rel="stylesheet" href="/scss/main.css" />
+  </head>
+  <body>
+    <load src="/partials/header.html" />
+    <header>
+      <h1>Креативні VIP-студії в оренду від Prime Focus Studio</h1>
+    </header>
+
+    <nav aria-label="Breadcrumb">
+      <ul class="breadcrumb"></ul>
+    </nav>
+
+    <main>
+      <ul>
+        <li>
+          <div>
+            <h3>Креативний Візуал</h3>
+            <p>
+              "Креативний Візуал" — це студія, яка пропонує унікальні та
+              інноваційні рішення для фотозйомок. Ми спеціалізуємося на
+              створенні концептуальних і художніх зображень, які вражають і
+              надихають. Наші проєкти включають мистецькі фотосесії, креативну
+              рекламу та індивідуальні фотопроекти.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Артистичний Об'єктив</h3>
+            <p>
+              "Артистичний Об'єктив" — студія, що зосереджена на художніх і
+              креативних зйомках. Ми допоможемо втілити найсміливіші ідеї у
+              життя, створюючи вражаючі і неповторні зображення. Наша команда
+              працює над концептуальними проєктами, арт-фотосесіями та
+              візуальними експериментами.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Іннова Фото Лаб</h3>
+            <p>
+              "Іннова Фото Лаб" пропонує новаторські підходи до фотозйомки,
+              поєднуючи сучасні технології з креативними концепціями. Ми
+              створюємо незабутні образи для реклами, мистецьких проектів і
+              особистих фотосесій. Наші рішення відзначаються високою якістю та
+              оригінальністю.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Візуальне Мистецтво</h3>
+            <p>
+              "Візуальне Мистецтво" спеціалізується на створенні художніх та
+              креативних зображень, які підкреслять вашу унікальність. Ми
+              працюємо над фотосесіями, що включають експериментальні техніки,
+              нові формати та незвичайні підходи до візуального мистецтва.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Фантазія</h3>
+            <p>
+              Студія "Фантазія" — це місце, де ваші найсміливіші ідеї стають
+              реальністю. Ми фокусуємося на креативних і нестандартних
+              фотопроектах, які захоплюють і дивують. Наша команда створює
+              унікальні образи для реклами, особистих проектів та мистецьких
+              ініціатив.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div id="booking-form" class="modal">
+        <div class="modal-content">
+          <span class="close" data-modal-id="booking-form">&times;</span>
+          <h2>Форма бронювання</h2>
+          <form id="booking-form-content">
+            <input type="hidden" id="selected-studio" name="studio" />
+
+            <label for="date">Дата:</label>
+            <input type="date" id="date" name="date" required />
+
+            <label for="time">Час:</label>
+            <input type="time" id="time" name="time" required />
+
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label>
+              <input
+                type="checkbox"
+                id="privacy-policy"
+                name="privacy-policy"
+                required
+              />
+              Я погоджуюсь з
+              <a href="/privacy.html" target="_blank"
+                >політикою конфіденційності</a
+              >
+            </label>
+
+            <button type="submit">Підтвердити бронювання</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <load src="/partials/footer.html" />
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

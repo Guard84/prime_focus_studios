@@ -1,0 +1,52 @@
+.cookie-consent-modal {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    z-index: 9999;
+    display: none; /* Спочатку прихований */
+  
+    p {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+  
+    a {
+      color: #343fd4;
+      text-decoration: underline;
+    }
+  
+    .accept-btn,
+    .decline-btn {
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
+      font-size: 14px;
+    }
+  
+    .accept-btn {
+      background-color: #343fd4;
+  
+      &:hover {
+        background-color: #2a2d69;
+      }
+    }
+  
+    .decline-btn {
+      background-color: #b12a2a;
+  
+      &:hover {
+        background-color: #a12323;
+      }
+    }
+  }

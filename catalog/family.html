@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-control" content="no-transform" />
+    <meta http-equiv="Cache-control" content="no-cache" />
+    <meta name="google" content="nopagereadaloud" />
+    <title>Сімейні студії</title>
+    <link rel="stylesheet" href="/scss/main.css" />
+  </head>
+  <body>
+    <load src="/partials/header.html" />
+    <header>
+      <h1>Сімейні VIP-студії в оренду від Prime Focus Studio</h1>
+    </header>
+
+    <nav aria-label="Breadcrumb">
+      <ul class="breadcrumb"></ul>
+    </nav>
+
+    <main>
+      <ul>
+        <li>
+          <div>
+            <h3>Родинний Затишок</h3>
+            <p>
+              "Родинний Затишок" створює теплі і природні знімки, які
+              відображають щирі моменти вашої родини. Ми спеціалізуємося на
+              сімейних портретах, що передають атмосферу затишку і любові в
+              вашій родині. Наша мета — зберегти ваші найцінніші спогади у
+              вигляді красивих фотографій.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Сімейні Спогади</h3>
+            <p>
+              "Сімейні Спогади" пропонує професійну зйомку для родин будь-якого
+              розміру. Ми допомагаємо зберегти найяскравіші моменти вашого життя
+              в чудових фотографіях, що відображають вашу єдність і радість.
+              Наші сесії орієнтовані на комфорт і задоволення кожного члена
+              сім'ї.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Щасливі Моменти</h3>
+            <p>
+              "Щасливі Моменти" спеціалізується на створенні фото, що передають
+              емоції і радощі вашої родини. Ми працюємо над тим, щоб кожен
+              знімок був відображенням справжньої любові і гармонії. Наші
+              сімейні фотосесії включають не тільки традиційні портрети, але і
+              кумедні та неформальні моменти.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Теплий Дім</h3>
+            <p>
+              "Теплий Дім" пропонує затишну і дружню атмосферу для зйомки
+              сімейних портретів. Наша команда допоможе створити фотографії, які
+              будуть радувати вас і ваших близьких довгі роки. Ми фокусуємося на
+              емоціях, що виникають в природному середовищі вашого дому або в
+              студії.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Родинне Сонце</h3>
+            <p>
+              "Родинне Сонце" — це студія, яка знімає ваші родинні моменти з
+              теплом і увагою до деталей. Ми спеціалізуємося на створенні фото,
+              які відображають щасливі і спокійні миті вашого життя. Наші сесії
+              зосереджені на тому, щоб кожен знімок був наповнений світлом і
+              радощами.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div id="booking-form" class="modal">
+        <div class="modal-content">
+          <span class="close" data-modal-id="booking-form">&times;</span>
+          <h2>Форма бронювання</h2>
+          <form id="booking-form-content">
+            <input type="hidden" id="selected-studio" name="studio" />
+
+            <label for="date">Дата:</label>
+            <input type="date" id="date" name="date" required />
+
+            <label for="time">Час:</label>
+            <input type="time" id="time" name="time" required />
+
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label>
+              <input
+                type="checkbox"
+                id="privacy-policy"
+                name="privacy-policy"
+                required
+              />
+              Я погоджуюсь з
+              <a href="/privacy.html" target="_blank"
+                >політикою конфіденційності</a
+              >
+            </label>
+
+            <button type="submit">Підтвердити бронювання</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <load src="/partials/footer.html" />
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-control" content="no-transform" />
+    <meta http-equiv="Cache-control" content="no-cache" />
+    <meta name="google" content="nopagereadaloud" />
+    <title>Студії для заходів</title>
+    <link rel="stylesheet" href="/scss/main.css" />
+  </head>
+  <body>
+    <load src="/partials/header.html" />
+    <header>
+      <h1>VIP-студії для заходів в оренду від Prime Focus Studio</h1>
+    </header>
+
+    <nav aria-label="Breadcrumb">
+      <ul class="breadcrumb"></ul>
+    </nav>
+
+    <main>
+      <ul>
+        <li>
+          <div>
+            <h3>Гранд Відзначення</h3>
+            <p>
+              "Гранд Відзначення" спеціалізується на фотозйомці для великих
+              подій і урочистостей. Ми забезпечуємо високоякісні зображення, які
+              передають атмосферу та емоції вашого заходу. Наша команда створює
+              вражаючі фото для весіль, корпоративів, ювілеїв та інших значущих
+              подій.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Світло Події</h3>
+            <p>
+              "Світло Події" — це студія, що фокусується на професійній зйомці
+              подій. Ми створюємо яскраві та детальні зображення, які передають
+              кожен момент вашого свята. Наша команда має досвід у зйомці
+              корпоративних заходів, святкових подій та особистих урочистостей.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Фотостудія Світанок</h3>
+            <p>
+              "Фотостудія Світанок" пропонує комплексні рішення для
+              документування заходів. Ми спеціалізуємося на створенні вражаючих
+              фото, що відображають атмосферу вашої події, будь то корпоратив,
+              весільне святкування або приватна вечірка. Наша мета — зберегти
+              ваші найцінніші спогади.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Елегантні Моменти</h3>
+            <p>
+              "Елегантні Моменти" фокусується на елегантній та стильній
+              фотозйомці подій. Наша команда працює над створенням зображень,
+              які підкреслюють елегантність і престиж вашого заходу. Ми
+              забезпечуємо якісну зйомку для весіль, банкетів, церемоній і
+              корпоративних свят.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Віртуозний Сюжет</h3>
+            <p>
+              "Віртуозний Сюжет" спеціалізується на захоплюючих та професійних
+              зображеннях для заходів будь-якого масштабу. Ми забезпечуємо
+              створення яскравих, динамічних фото, що відображають атмосферу
+              вашого свята, від великих корпоративів до інтимних урочистостей.
+            </p>
+            <div>
+              <p>Ціна оренди: 850 грн/год</p>
+              <a
+                href="#booking-form"
+                class="cta-button"
+                data-modal-id="booking-form"
+                >Забронювати</a
+              >
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div id="booking-form" class="modal">
+        <div class="modal-content">
+          <span class="close" data-modal-id="booking-form">&times;</span>
+          <h2>Форма бронювання</h2>
+          <form id="booking-form-content">
+            <input type="hidden" id="selected-studio" name="studio" />
+
+            <label for="date">Дата:</label>
+            <input type="date" id="date" name="date" required />
+
+            <label for="time">Час:</label>
+            <input type="time" id="time" name="time" required />
+
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label>
+              <input
+                type="checkbox"
+                id="privacy-policy"
+                name="privacy-policy"
+                required
+              />
+              Я погоджуюсь з
+              <a href="/privacy.html" target="_blank"
+                >політикою конфіденційності</a
+              >
+            </label>
+
+            <button type="submit">Підтвердити бронювання</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <load src="/partials/footer.html" />
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
