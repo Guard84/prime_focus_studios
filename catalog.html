@@ -11,26 +11,26 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Каталог студій</title>
-    <link rel="stylesheet" href="/scss/cookies.scss" />
+    <link rel="stylesheet" href="/scss/main.css" />
   </head>
   <body>
     <load src="/partials/header.html" />
-    <header>
-      <h1>
+    <nav aria-label="Breadcrumb">
+      <ul class="breadcrumb"></ul>
+    </nav>
+    
+    <header class="header">
+      <h1 class="header-title">
         Prime Focus Studio - сучасні студії для створення вражаючих фотографій
       </h1>
     </header>
 
-    <nav aria-label="Breadcrumb">
-      <ul class="breadcrumb"></ul>
-    </nav>
-
-    <main>
+    <main class="main-content">
       <section class="catalog">
         <div class="studio-card">
-          <img src="studio1.jpg" alt="Studio 1" class="studio-image" />
-          <h2 class="studio-title">Портретні студії</h2>
-          <p class="studio-description">
+          <img src="/images/portret/portret-4.jpg" alt="Портретна студія" class="studio-card-image" />
+          <h2 class="studio-card-title">Портретні студії</h2>
+          <p class="studio-card-description">
             Забезпечте собі ідеальні портрети в наших студіях з сучасним
             освітленням та професійним обладнанням. Наша команда досвідчених
             фотографів створить портрети, які підкреслять вашу індивідуальність
@@ -38,36 +38,36 @@
             творчих проектів. Орендуйте наші студії і насолоджуйтеся якісним
             сервісом і комфортною атмосферою.
           </p>
-          <a href="/catalog/portret.html">Вибрати студію</a>
+          <a href="/catalog/portret.html" class="studio-card-link">Вибрати студію</a>
         </div>
         <div class="studio-card">
-          <img src="studio2.jpg" alt="Studio 2" class="studio-image" />
-          <h2 class="studio-title">Комерційні студії</h2>
-          <p class="studio-description">
+          <img src="/images/commercial/commercial-4.jpg" alt="Комерційна студія" class="studio-card-image" />
+          <h2 class="studio-card-title">Комерційні студії</h2>
+          <p class="studio-card-description">
             Професійний простір для створення рекламних кампаній, зйомок
             продуктів, модних показів та бізнес-проектів. Комерційні студії
             обладнані найсучаснішими технологіями, що дозволяє втілювати
             будь-які творчі ідеї. Ідеальне місце для масштабних зйомок з
             високими вимогами до якості та деталізації.
           </p>
-          <a href="/catalog/commercial.html">Вибрати студію</a>
+          <a href="/catalog/commercial.html" class="studio-card-link">Вибрати студію</a>
         </div>
         <div class="studio-card">
-          <img src="studio3.jpg" alt="Studio 3" class="studio-image" />
-          <h2 class="studio-title">Сімейні студії</h2>
-          <p class="studio-description">
+          <img src="/images/family/family-4.jpg" alt="Сімейна студія" class="studio-card-image" />
+          <h2 class="studio-card-title">Сімейні студії</h2>
+          <p class="studio-card-description">
             Створіть незабутні сімейні спогади в наших затишних студіях, які
             ідеально підходять для зйомок портретів, святкових подій і спільних
             моментів. Наші сімейні студії забезпечують комфортну атмосферу та
             професійне освітлення, щоб кожна деталь була ідеально відображена.
             Підходять для всіх вікових груп і сімейних сценаріїв.
           </p>
-          <a href="/catalog/family.html">Вибрати студію</a>
+          <a href="/catalog/family.html" class="studio-card-link">Вибрати студію</a>
         </div>
         <div class="studio-card">
-          <img src="studio4.jpg" alt="Studio 4" class="studio-image" />
-          <h2 class="studio-title">Фотостудії для заходів</h2>
-          <p class="studio-description">
+          <img src="/public/images/events/events-1.jpg" alt="Фотостудії для заходів" class="studio-card-image" />
+          <h2 class="studio-card-title">Фотостудії для заходів</h2>
+          <p class="studio-card-description">
             Орендуйте наші спеціалізовані студії для організації та зйомки
             великих заходів, таких як весілля, корпоративи, виставки та інші
             урочистості. Наші студії пропонують просторий і гнучкий простір,
@@ -75,12 +75,12 @@
             зафіксувати важливі моменти вашого заходу. Ідеальне рішення для
             створення якісних фотозвітів та відеоматеріалів.
           </p>
-          <a href="/catalog/events.html">Вибрати студію</a>
+          <a href="/catalog/events.html" class="studio-card-link">Вибрати студію</a>
         </div>
         <div class="studio-card">
-          <img src="studio5.jpg" alt="Studio 5" class="studio-image" />
-          <h2 class="studio-title">Креативна студія</h2>
-          <p class="studio-description">
+          <img src="/public/images/creative/creative-1.jpg" alt="Studio 5" class="studio-card-image" />
+          <h2 class="studio-card-title">Креативна студія</h2>
+          <p class="studio-card-description">
             Втілюйте свої найсміливіші ідеї в креативних студіях, які ідеально
             підходять для творчих проектів, арт-фотографії та унікальних зйомок.
             Наші студії пропонують гнучкий простір з можливістю адаптації до
@@ -88,18 +88,18 @@
             створення ексклюзивних фотопроектів. Ідеально підходять для художніх
             експериментів та інноваційних проектів.
           </p>
-          <a href="/catalog/creative.html">Вибрати студію</a>
+          <a href="/catalog/creative.html" class="studio-card-link">Вибрати студію</a>
         </div>
       </section>
 
       <div class="cookie-consent-modal">
-        <p>
+        <p class="cookie-text">
           У нас на сайті використовуються файли cookie для покращення вашого
           досвіду.
-          <a href="/privacy.html" target="_blank">Політика конфіденційності</a>
+          <a href="/privacy.html" target="_blank" class="cookie-link">Політика конфіденційності</a>
         </p>
-        <button type="button" class="accept-btn">Прийняти</button>
-        <button type="button" class="decline-btn">Відмовитись</button>
+        <button type="button" class="cookie-accept-btn">Прийняти</button>
+        <button type="button" class="cookie-decline-btn">Відмовитись</button>
       </div>
     </main>
     <load src="/partials/footer.html" />

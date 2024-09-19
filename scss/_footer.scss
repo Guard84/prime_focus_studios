@@ -1,0 +1,137 @@
+@import './variables.scss';
+
+.footer {
+    background-color: $primary-color;
+    margin-top: 40px;
+    color: $background-color;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 2px solid $secondary-color;
+    border-radius: 10px;
+  }
+  
+  .footer-contacts {
+    flex: 1;
+    margin-right: 2rem;
+  
+    .footer-contacts-title {
+      font-size: $font-size-heading;
+      font-family: $font-secondary;
+      color: $secondary-color;
+      margin-bottom: 40px;
+      color: $background-color;
+    }
+  
+    .footer-contacts-item {
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+  
+      a {
+        color: #007bff;
+        text-decoration: none;
+  
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  
+    .footer-contacts-rights {
+      margin-top: 2rem;
+      
+      .footer-contacts-rights-text {
+        margin: 0;
+        font-size: 0.8rem;
+      }
+      
+      .footer-contacts-rights-links {
+        color: #3219c0;
+        display: block;
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+  
+  .footer-form {
+    flex: 1;
+    margin-bottom: 10px;
+  
+    .footer-form-title {
+      font-size: 1.5rem;
+      font-family: $font-secondary;
+      margin-bottom: 1rem;
+      color: $background-color;
+    }
+  
+    .footer-form-form {
+      display: flex;
+      flex-direction: column;
+  
+      .footer-form-label {
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+        font-family: $font-primary;
+      }
+  
+      .footer-form-input,
+      .footer-form-textarea {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 0.9rem;
+      }
+  
+      .footer-form-textarea {
+        resize: vertical; // Дозволити вертикальне розширення текстової області
+      }
+  
+      .footer-form-button {
+        font-family: $font-primary;
+        padding: 0.7rem;
+        border: none;
+        border-radius: 5px;
+        background-color: $secondary-color;
+        color: $primary-color;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: $secondary-hover-color;
+        }
+      }
+    }
+  }
+  
+  // Медіа-запити для мобільних екранів
+  @media screen and (max-width: 767px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-contacts,
+    .footer-form {
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 20px;
+      text-align: center;
+      border-bottom: 2px solid $secondary-color;
+    }
+  }
+  

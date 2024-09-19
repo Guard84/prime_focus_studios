@@ -1,5 +1,59 @@
 @mixin center-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// _mixins.scss
+@mixin breadcrumb(
+  $separator: "/",
+  $color: #333,
+  $separator-color: #666,
+  $active-color: #998832
+) {
+  nav[aria-label="Breadcrumb"] {
+    color: $color;
+
+    ul.breadcrumb {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      margin: 0;
+      list-style: none;
+
+      li {
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+
+        &::before {
+          content: "#{$separator}";
+          margin: 0 6px;
+          color: $separator-color;
+        }
+
+        &:first-child::before {
+          content: "";
+        }
+
+        &.active {
+          color: $active-color;
+          font-weight: bold;
+        }
+
+        a {
+          color: $color;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        span {
+          color: $active-color;
+        }
+      }
+    }
   }
+}

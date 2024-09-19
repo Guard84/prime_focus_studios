@@ -1,0 +1,258 @@
+@import "./variables";
+
+// Секція введення
+.intro-section {
+  text-align: center;
+  padding: 2rem 20px;
+  background-color: $primary-color;
+  border-bottom: 2px solid $secondary-color;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  .intro-title {
+    font-family: $font-secondary;
+    font-size: $font-size-heading;
+    color: $background-color;
+    margin-top: 30px;
+
+    span {
+      color: #998832;
+      font-size: 28px;
+    }
+  }
+
+  .intro-text {
+    color: $background-color;
+    font-size: 16px;
+    margin: 30px 0;
+    font-weight: bold;
+  }
+
+  .intro-link {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: $secondary-color;
+    color: $primary-color;
+    border-radius: 5px;
+    font-family: $font-primary;
+    font-size: 16px;
+
+    &:hover {
+      background-color: $primary-hover-color;
+    }
+  }
+
+  // Мобільні стилі
+  @media screen and (max-width: 767px) {
+    padding: 1rem;
+    border-bottom: 2px solid $secondary-color;
+
+    .intro-title {
+      font-size: 24px;
+
+      span {
+        font-size: 28px;
+      }
+    }
+
+    .intro-text {
+      font-size: 16px;
+      margin: 30px 0;
+    }
+  }
+
+  // Десктоп стилі
+  @media screen and (min-width: 768px) {
+    background-image: url("/public/images/hero-min.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    height: 340px;
+
+    .intro-title {
+      width: 800px;
+      font-size: $font-size-heading;
+      color: $primary-color;
+      margin: 40px auto;
+      text-align: center;
+
+      span {
+        font-size: 40px;
+      }
+    }
+
+    .intro-text {
+      font-size: 18px;
+
+      @media screen and (min-width: 700px) {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+// Секція студій
+.studios-section {
+  margin: 40px 0;
+
+  .studios-title {
+    font-family: $font-secondary;
+    font-size: $font-size-heading;
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+.studios-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .studio-item {
+    border: 1px solid $primary-color;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: $primary-color;
+
+    .studio-details {
+      background-color: $primary-color;
+      border-radius: 10px;
+      border-bottom: 2px solid $secondary-color;
+
+      .studio-name {
+        font-family: $font-secondary;
+        font-size: $font-size-heading;
+        color: $background-color;
+        text-align: center;
+      }
+
+      .studio-description {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .studio-image {
+          width: 500px;
+          height: 300px;
+          object-fit: cover;
+          flex-shrink: 0;
+          border-radius: 10px;
+        }
+
+        .studio-description-text {
+          color: $background-color;
+          margin-top: 20px;
+          width: 400px;
+        }
+      }
+
+      .studio-info {
+        color: $background-color;
+        width: 900px;
+        border-bottom: 2px solid $secondary-color;
+        padding-bottom: 10px;
+        border-radius: 10px;
+      }
+
+      .studio-more-link {
+        padding: 15px 30px;
+        background-color: $secondary-color;
+        color: $primary-color;
+        border-radius: 5px;
+        font-family: $font-primary;
+        font-size: $font-size-base;
+        margin: 30px auto;
+        text-align: center;
+        display: block;
+        max-width: 350px;
+
+        &:hover {
+          background-color: $secondary-hover-color;
+        }
+      }
+    }
+  }
+
+  // Медіа-запит для мобільних екранів
+  @media screen and (max-width: 700px) {
+    .studio-description {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .studio-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .studio-description-text {
+        max-width: 350px;
+        border-bottom: solid 1px #998832;
+      }
+
+      .studio-info {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+// Секція "Чому саме ми"
+.why-us-section {
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: 20px;
+  border-radius: 5px;
+
+  .why-us-title {
+    font-family: $font-secondary;
+    font-size: $font-size-heading;
+    color: $background-color;
+    text-align: center;
+  }
+
+  .why-us-text {
+    color: $secondary-color;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-align: center;
+    border-bottom: 2px solid $secondary-color;
+    border-radius: 10px;
+    padding-bottom: 10px;
+  }
+
+  .why-us-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  // Десктопні стилі для великих екранів
+  @media screen and (min-width: 960px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .why-us-text,
+    .why-us-title {
+      flex: 1;
+      margin-right: 2rem;
+    }
+
+    .why-us-image {
+      max-width: 900px;
+      height: auto;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
