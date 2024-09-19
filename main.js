@@ -189,4 +189,21 @@ document.addEventListener("DOMContentLoaded", function () {
       hideModal();
     });
   }
+
+  //burger
+  const burgerMenu = document.getElementById("burger-menu");
+  const navMenu = document.querySelector(".header__nav");
+  const overlay = document.getElementById("overlay");
+
+  burgerMenu.addEventListener("click", () => {
+    navMenu.classList.toggle("header__nav--open");
+    overlay.classList.toggle("active");
+    burgerMenu.classList.toggle("active");
+  });
+
+  overlay.addEventListener("click", () => {
+    navMenu.classList.remove("header__nav--open");
+    overlay.classList.remove("active");
+    burgerMenu.classList.remove("active");
+  });
 });

@@ -1,0 +1,17 @@
+// Colors
+$primary-color: #1C2225;
+$secondary-color: #ECD979;
+$background-color: #FCF9F9;
+
+// Hover colors
+$primary-hover-color: darken($primary-color, 10%);
+$secondary-hover-color: lighten($secondary-color, 10%);
+
+// Fonts
+$font-primary: 'Ubuntu', sans-serif;
+$font-secondary: 'Karla', sans-serif;
+
+// Font sizes
+$font-size-base: 16px;
+$font-size-heading: 24px;
+$font-size-small: 14px;
