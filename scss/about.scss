@@ -10,11 +10,12 @@
 
   .main-title {
     font-size: $font-size-heading;
+    font-family: $font-secondary;
     margin-bottom: 20px;
     color: $primary-color;
     text-align: center;
     border-bottom: 2px solid $secondary-color;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
   }
 
   .intro-text {
@@ -120,7 +121,6 @@
   }
 }
 
-// Десктопні стилі
 @media (min-width: 768px) {
   .main-content {
     padding: 30px;
@@ -131,7 +131,6 @@
     .main-title {
       font-size: $font-size-heading;
       margin-bottom: 30px;
-      text-align: left;
       border-bottom: 2px solid $secondary-color;
       padding-bottom: 15px;
     }

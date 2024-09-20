@@ -1,0 +1,61 @@
+@import "./variables";
+
+.ty-header {
+  background-color: $background-color;
+  padding: 16px;
+  text-align: center;
+
+  .header-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.ty-main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  text-align: center;
+  border: 1px solid $secondary-color;
+
+  .ty-success-message {
+    font-family: $font-secondary;
+    font-size: $font-size-heading;
+    color: $primary-color;
+    margin-bottom: 16px;
+  }
+
+  .ty-success-icon {
+    width: 100px;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .ty-header {
+    padding: 24px;
+
+    .header-link {
+      font-size: 18px;
+    }
+  }
+
+  .ty-main-content {
+    padding: 48px;
+
+    .ty-success-message {
+      font-size: 32px;
+    }
+
+    .ty-success-icon {
+      width: 150px;
+    }
+  }
+}

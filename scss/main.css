@@ -1,10 +1,13 @@
-@import './base.scss';
+@import "./base.scss";
 
-@import './_header.scss';
-@import './_footer.scss';
-@import './index.scss';
-@import './catalog.scss';
-@import './about.scss';
+@import "./_header.scss";
+@import "./_footer.scss";
+@import "./index.scss";
+@import "./catalog.scss";
+@import "./about.scss";
 
-@import './cookies.scss';
-@import './modal.scss';
+@import "./cookies.scss";
+@import "./modal.scss";
+
+@import "./studios.scss";
+@import "./ty.scss";

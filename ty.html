@@ -6,18 +6,36 @@
     <meta http-equiv="Cache-control" content="no-transform" />
     <meta http-equiv="Cache-control" content="no-cache" />
     <meta name="google" content="nopagereadaloud" />
-    <meta name="robots" content="noindex">
+    <meta name="robots" content="noindex" />
     <title>Оренда оформлена</title>
+    <link rel="icon" href="/public/assets/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="/scss/main.css">
   </head>
   <body>
-    <header class="site-header">
-      <a href="/">Повернутися на головну</a>
+    <load src="/partials/header.html" />
+    <header class="ty-header">
+      <a href="/" class="header-link">Повернутися на головну</a>
     </header>
-    <main class="thank-you-container">
-      <img src="/images/success-icon.png" alt="Успіх" />
-      <h1 id="thank-you-message"></h1>
-      <p>Ми незабаром зв'яжемося з Вами для підтвердження.</p>
+    <main class="ty-main-content">
+      <h1 class="ty-success-message" id="success-message"></h1>
+      <p>Ми незабаром зв"яжемося з Вами для підтверждення</p>
+      <img
+        class="ty-success-icon"
+        src="/images/free-icon-success.png"
+        alt="Успіх"
+      />
     </main>
+    <div class="cookie-consent-modal">
+      <p class="cookie-text">
+        У нас на сайті використовуються файли cookie для покращення вашого
+        досвіду.
+        <a href="/privacy.html" target="_blank" class="cookie-link"
+          >Політика конфіденційності</a
+        >
+      </p>
+      <button type="button" class="cookie-accept-btn">Прийняти</button>
+      <button type="button" class="cookie-decline-btn">Відмовитись</button>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

@@ -3,12 +3,24 @@
 
 @include breadcrumb;
 
+.catalog-title {
+  font-size: $font-size-heading;
+  font-family: $font-secondary;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  color: $primary-color;
+  text-align: center;
+  border-bottom: 2px solid $secondary-color;
+  padding-bottom: 15px;
+}
+
 .catalog {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
-  background-color: #f8f8f8;
+  background-color: $primary-color;
+  border-radius: 10px;
 }
 
 .studio-card {
@@ -22,7 +34,7 @@
   flex-direction: column;
   text-align: center;
   transition: transform 0.3s ease;
-  height: 100%; // Для мобільної версії, висота картки
+  height: 100%;
 
   &:hover {
     transform: scale(1.02);
@@ -30,15 +42,15 @@
 
   .studio-card-image {
     width: 100%;
-    height: 200px; // Фіксована висота для зображень
-    object-fit: cover; // Забезпечує, що зображення заповнює контейнер без деформації
+    height: 200px;
+    object-fit: cover;
     border-bottom: 1px solid #ddd;
   }
 
   .studio-card-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; // Залишає місце для кнопки внизу
+    justify-content: space-between;
     height: 100%;
   }
 
@@ -52,35 +64,33 @@
     font-size: 0.9rem;
     color: #666;
     margin-bottom: 1rem;
-    flex: 1; // Дозволяє опису займати залишковий простір
+    flex: 1;
   }
 
   .studio-card-link {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: auto; // Переміщує кнопку до низу
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: $secondary-color;
+    color: $primary-color;
+    border-radius: 5px;
+    font-family: $font-primary;
+    font-size: 16px;
 
     &:hover {
-      text-decoration: underline;
+      background-color: $primary-hover-color;
     }
   }
 }
 
-// Медіа-запити для десктопа
 @media (min-width: 768px) {
   .catalog {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem; // Відступи між картками
+    gap: 2rem;
+    justify-content: center;
   }
 
   .studio-card {
-    // Висота карток залишається відповідно до висоти контейнера
-    height: auto; // Переключаємося на авто-висоту
-  }
-
-  .studio-card:nth-child(5) {
-    grid-column: span 1;
+    height: auto;
   }
 }
