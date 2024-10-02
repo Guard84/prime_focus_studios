@@ -1,7 +1,0 @@
-User-agent: *
-Disallow: /privacy/
-Disallow: /terms/
-Disallow: /success/
-Disallow: /ty/
-
-Sitemap: https://studiyaphoto.com/sitemap.xml

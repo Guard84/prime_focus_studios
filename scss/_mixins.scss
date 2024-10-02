@@ -134,6 +134,8 @@
           color: $primary-color;
           margin-top: auto;
           font-weight: bold;
+          border-bottom: 2px solid $secondary-color;
+          padding-bottom: 15px;
         }
 
         .cta-button {
